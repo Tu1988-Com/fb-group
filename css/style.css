@@ -1,0 +1,143 @@
+body {
+	font-family: "Inter", sans-serif;
+	background-color: #f0f2f5;
+}
+.navbar {
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+.navbar-brand {
+	font-size: 1.5rem;
+}
+.navbar-nav .nav-link {
+	font-weight: 500;
+	color: #4a4a4a !important;
+	border-radius: 8px;
+	padding: 8px 12px;
+	transition: background-color 0.2s ease;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+	background-color: #e7f3ff;
+	color: #0d6efd !important;
+}
+.form-control.rounded-pill {
+	border-radius: 50rem !important;
+}
+/* Main Content Area */
+.container-fluid {
+	padding-top: 20px;
+}
+/* Sidebars */
+.sidebar-left,
+.sidebar-right {
+	padding-top: 20px;
+}
+.card {
+	border: none;
+	border-radius: 15px !important;
+	overflow: hidden;
+}
+.card-title {
+	font-weight: bold;
+	color: #333;
+	margin-bottom: 15px;
+}
+.list-group-item {
+	background-color: transparent;
+	border-radius: 8px;
+	transition: background-color 0.2s ease;
+}
+.list-group-item a {
+	color: #333;
+	font-weight: 500;
+}
+.list-group-item a:hover {
+	background-color: #f0f2f5;
+	color: #0d6efd;
+}
+/* Post Card */
+.post-card .card-body {
+	padding: 20px;
+}
+.post-card img {
+	object-fit: cover;
+}
+.post-action-btn {
+	font-weight: 500;
+	color: #555;
+	transition:
+		background-color 0.2s ease,
+		color 0.2s ease;
+	flex-basis: 30%;
+}
+.post-action-btn:hover {
+	background-color: #f0f2f5;
+	color: #0d6efd;
+}
+/*
+Responsive Adjustments (Mobile First) */ /* Small devices (phones, less than
+768px) */
+@media (max-width: 767.98px) {
+	.navbar-brand {
+		font-size: 1.2rem;
+	}
+	.navbar-toggler {
+		margin-left: auto;
+	}
+	.navbar-collapse {
+		margin-top: 10px;
+	}
+	.navbar-nav {
+		flex-direction: column;
+	}
+	.navbar-nav .nav-item {
+		width: 100%;
+		text-align: center;
+	}
+	.d-flex.align-items-center.ms-3 {
+		display: none !important; /* Hide user avatar in header on small screens */
+	}
+	.main-content {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+/* Medium devices (tablets, 768px
+and up) */
+@media (min-width: 768px) {
+	.container-fluid {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.sidebar-left {
+		padding-right: 15px;
+	}
+	.main-content {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+/* Large devices (desktops, 992px
+and up) */
+@media (min-width: 992px) {
+	.container-fluid {
+		max-width: 1400px; /*Max width for larger screens */
+	}
+	.sidebar-left {
+		padding-right: 15px;
+	}
+	.sidebar-right {
+		padding-left: 15px;
+	}
+}
+/* Extra large devices (large desktops,1200px and up) */
+@media (min-width: 1200px) {
+	.container-fluid {
+		max-width: 1600px; /* Even wider for extra large screens */
+	}
+}
+/* Utility classes */
+.hover-bg-light:hover {
+	background-color: #f0f2f5;
+}
